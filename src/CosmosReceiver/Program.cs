@@ -103,7 +103,8 @@ class Program
 
         try
         {
-            await Task.Delay(200);
+            // await Task.Delay(200);
+            
             var res = await _container.ReadItemAsync<Person>(msg.IdPerson, new PartitionKey(msg.IdPerson), opt);
 
             if (res.StatusCode == HttpStatusCode.NotFound)
