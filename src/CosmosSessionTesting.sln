@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosSessionTesting", "CosmosSessionTesting\CosmosSessionTesting.csproj", "{336103F1-6B21-47D6-BF70-7B247B11FD5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosReceiver", "CosmosReceiver\CosmosReceiver.csproj", "{FA99663B-427F-45F9-AB36-4CDBBD6B3540}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{336103F1-6B21-47D6-BF70-7B247B11FD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336103F1-6B21-47D6-BF70-7B247B11FD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336103F1-6B21-47D6-BF70-7B247B11FD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336103F1-6B21-47D6-BF70-7B247B11FD5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA99663B-427F-45F9-AB36-4CDBBD6B3540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA99663B-427F-45F9-AB36-4CDBBD6B3540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA99663B-427F-45F9-AB36-4CDBBD6B3540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA99663B-427F-45F9-AB36-4CDBBD6B3540}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
