@@ -24,6 +24,7 @@ class Program
     private string databaseId = "ToDoList";
     private string containerId = "Items";
 
+    private int errCnt;
 
     static async Task Main(string[] args)
     {
@@ -83,7 +84,7 @@ class Program
     // handle received messages
     async Task MessageHandler(ProcessMessageEventArgs args)
     {
-        var errCnt = 0;
+        
         var body = args.Message.Body.ToString();
         
         Console.WriteLine($"Received: {body}. Errors: {errCnt}");
@@ -106,11 +107,13 @@ class Program
 
             if (res.StatusCode == HttpStatusCode.NotFound)
             {
+                errCnt++;
                 Console.Error.WriteLine($"The item with id {msg.IdPerson} does not exist");
             }
         }
         catch (Exception e)
         {
+            errCnt++;
             Console.WriteLine($"The item with id {msg.IdPerson} does not exist");
             throw;
         }
