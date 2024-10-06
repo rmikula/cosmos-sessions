@@ -83,8 +83,10 @@ class Program
     // handle received messages
     async Task MessageHandler(ProcessMessageEventArgs args)
     {
+        var errCnt = 0;
         var body = args.Message.Body.ToString();
-        Console.WriteLine($"Received: {body}");
+        
+        Console.WriteLine($"Received: {body}. Errors: {errCnt}");
 
         var msg = JsonSerializer.Deserialize<Message>(body);
 
